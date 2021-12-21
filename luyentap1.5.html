@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+     let Constellation = ["Ursa", "Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+     function check(starOfchoice) {
+         for (i = 0; i <star.length; i++) {
+             if (starOfchoice !== star[i]) {
+               alert(" the star you selected is not in the array")
+             }else {
+                 result = Constellation[i]
+                 alert("your chosen star belongs to the constellation " + result)
+             }
+         }
+     }
+     let inputStar = prompt(" enter your star name of your choice");
+     check(inputStar)
+</script>
+</body>
+</html>
